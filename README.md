@@ -1,1 +1,1 @@
-# CANDETEC
+# CANDIDEC
