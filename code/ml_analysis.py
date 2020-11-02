@@ -26,12 +26,6 @@ from pathlib import Path
 save_fileloc = os.path.join(Path(__file__).parent, '../dataset/result/')
 print(save_fileloc)
 
-gpus = tf.config.experimental.list_physical_devices('GPU')
-tf.config.experimental.set_visible_devices(gpus[0], 'GPU')
-
-gpus = tf.config.experimental.list_physical_devices('GPU')
-tf.config.experimental.set_memory_growth(gpus[0], True)
-
 class DeepLearning:
     def __init__(self, input_dim, hidden_dim, output_dim):
         model = tf.keras.Sequential()
